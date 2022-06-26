@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto lg:px-24 px-4">
+
+        <!-- Navigation Bar -->
+        <div class="nav flex justify-between mt-4">
+            <div class="flex">
+                <img class="w-8 h-8 mr-2" src="assets\logo.png" alt="">
+                <h1 class="text-2xl font-bold">Asthra</h1>
+            </div>
+            <div class="flex justify-between xl:block hidden">
+                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#"><span>Home</span></a>
+                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#about"><span>About</span></a>
+                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#events"><span>Events</span></a>
+                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#contact"><span>Contact</span></a>
+                <a  class="ml-2 p-2 text-sm italic rounded-lg bg-green-600 font-bold text-white" href="#register"><span>Register</span></a>
+            </div>
+            <div class="flex justify-between xl:hidden block">
+                <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="" type="button"><svg viewBox="0 0 100 80" width="24" height="24"><rect width="100" height="20"></rect><rect y="30" width="100" height="20"></rect><rect y="60" width="100" height="20"></rect></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-green-600">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+                    </li>
+                    <li>
+                        <a href="#events" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#register" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-yellow-600 dark:hover:text-white">Register</a>
+                    </li>
+                    </ul>
+                </div>
+                <!-- <a  class="ml-2 p-2 lg:md:text-sm text-xs italic rounded-lg bg-green-600 font-bold text-white" href=""><span>Register</span></a> -->
+            </div>
+        </div>
+
+        <!-- Header Section -->
+        <div class="header relative">
+            <img class="" src="assets\header2.svg" alt="">
+            <div class="flex content-center absolute">
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="about text-center mt-4 mb-4 pt-4">
+            <h1 class="text-4xl mb-4 font-black text-green-600 italic">About</h1>
+            <p class="italic lg:text-xl text-sm mb-4 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id libero a urna dignissim auctor eu id mauris. Donec faucibus risus quis pulvinar bibendum. Fusce aliquam nunc nec ante laoreet interdum sed ut enim. Nunc sagittis viverra est ut porta. Integer in mauris id leo semper posuere. Curabitur vestibulum nibh et arcu lobortis, at tincidunt metus maximus. Vestibulum ac odio in sem posuere tristique sit amet a odio. Proin et facilisis metus, eget facilisis lorem. In hac habitasse platea dictumst. Nullam eget nisi eget arcu semper mattis.</p>
+            <div class="slider mt-12">
+                <div id="default-carousel" class="relative" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                         <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets\1.jpg" class="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets\2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets\3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-3 lg:gap-3 grid-cols-2 gap-3 pt-4">
+                <img class="rounded-2xl" src="assets\1.jpg" alt="">
+                <img class="rounded-2xl" src="assets\2.jpg" alt="">
+                <img class="rounded-2xl" src="assets\3.jpg" alt="">
+                <img class="rounded-2xl" src="assets\1.jpg" alt="">
+                <img class="rounded-2xl" src="assets\2.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div id="events" class="timeline mt-32 mb-24 pt-12">
+            <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center">Schedule</h1>
+
+            <!-- Day Item -->
+            <div class="day-item mt-12 mb-4">
+                <p class="font-bold text-2xl italic text-green-500 mb-4">27 April</p>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Inauguration</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-20 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-10 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Talk on Tourism</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Competition - 1</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-64 h-24 rounded-lg">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Inauguration</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-20 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-10 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- Day Item -->
+            <div class="day-item mt-12 mb-4">
+                <p class="font-bold text-2xl italic text-green-500 mb-4">28 April</p>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Inauguration</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-20 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-10 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Talk on Tourism</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Competition - 1</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-64 h-24 rounded-lg">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+                <!-- Time item -->
+                <div class="time-item flex relative">
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <div>
+                        <span class="text-lg font-bold italic">Inauguration</span>
+                        <p>Inaugural Address by chief guest and lamp lighting ceremony</p>
+                        <div class="flex mt-2 mb-4">
+                            <img src="assets/1.jpg" alt="" class="z-40 w-12 h-12 rounded-full">
+                            <img src="assets/1.jpg" alt="" class="z-30 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-20 w-12 h-12 rounded-full -ml-4">
+                            <img src="assets/1.jpg" alt="" class="z-10 w-12 h-12 rounded-full -ml-4">
+                        </div>
+                    </div>
+                    <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div id="register" class="tickets-pricing pt-12">
+            <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center mb-12">Buy Tickets</h1>
+            <div class="pricing-item md:flex justify-center md:px-64 px-12">
+                <div class="h-full bg-gray-800 rounded-lg mx-4 my-4 p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Students-1*</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Full event access</span><br>
+                        <span class="text-white italic text-md">Free pass to all competitions</span><br>
+                        <span class="text-white italic text-md">HOme zone access</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 1122/-</span>
+                </div>
+                <div class="h-full bg-gray-900 rounded-lg mx-4 p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Students-1*</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Full event access</span><br>
+                        <span class="text-white italic text-md">Free pass to all competitions</span><br>
+                        <span class="text-white italic text-md">HOme zone access</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 1122/-</span>
+                </div>
+                <div class="h-full bg-gray-800 rounded-lg mx-4 my-4 p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Students-1*</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Full event access</span><br>
+                        <span class="text-white italic text-md">Free pass to all competitions</span><br>
+                        <span class="text-white italic text-md">HOme zone access</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 1122/-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="pt-12 text-center mt-32 mb-24">
+            <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center mb-12">Contact</h1>
+            <p class="italic">Connect to us through our social media handles or through our WhatsApp number. You can also write to us at <span class="font-bold">tourismevent@email.com</span></p>
+            <div class="lg:flex lg:justify-center mt-8">
+                <div class="italic px-4 py-2 rounded-lg bg-black text-white mx-4 my-2"><span>tourismevent@online.com</span></div>
+                <div class="italic px-4 py-2 rounded-lg bg-blue-600 text-white mx-4 my-2"><span>/tourism_event</span></div>
+                <div class="italic px-4 py-2 rounded-lg bg-green-600 text-white mx-4 my-2"><span>+91 9090 909 099</span></div>
+                <div class="italic px-4 py-2 rounded-lg bg-purple-600 text-white mx-4 my-2"><span>/tourism_event</span></div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer mt-24 pt-12 pb-12 text-center">
+            <p class="text-sm italic leading-tight">Copyright @ Tourism event. All rights reserved. Website developed and designed by <a href="https://github.com/hxri" class="text-blue-400 font-bold">hxri.prxsxd</a></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+</body>
+</html>
