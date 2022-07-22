@@ -20,56 +20,57 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container mx-auto lg:px-24 px-4">
+    <div class="">
 
         <!-- Navigation Bar -->
-        <div class="nav flex justify-between mt-4">
-            <div class="flex">
-                <img class="w-8 h-8 mr-2" src="assets\logo.png" alt="">
-                <h1 class="text-2xl font-bold">Yathra</h1>
-            </div>
-            <div class="flex justify-between xl:block hidden">
-                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#"><span>Home</span></a>
-                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#about"><span>About</span></a>
-                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#events"><span>Events</span></a>
-                <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#contact"><span>Contact</span></a>
-                <a  class="ml-2 p-2 text-sm italic rounded-lg bg-green-600 font-bold text-white" href="#register"><span>Register</span></a>
-            </div>
-            <div class="flex justify-between xl:hidden block">
-                <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="" type="button"><svg viewBox="0 0 100 80" width="24" height="24"><rect width="100" height="20"></rect><rect y="30" width="100" height="20"></rect><rect y="60" width="100" height="20"></rect></svg></button>
-                <!-- Dropdown menu -->
-                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-green-600">
-                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
-                    </li>
-                    <li>
-                        <a href="#events" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#register" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-yellow-600 dark:hover:text-white">Register</a>
-                    </li>
-                    </ul>
-                </div>
-                <!-- <a  class="ml-2 p-2 lg:md:text-sm text-xs italic rounded-lg bg-green-600 font-bold text-white" href=""><span>Register</span></a> -->
-            </div>
-        </div>
+        
 
         <!-- Header Section -->
         <div class="header relative">
-            <img class="" src="assets\header2.svg" alt="">
-            <div class="flex content-center absolute">
+            <div class="container mx-auto lg:px-24 px-4 nav flex justify-between mt-4">
+                <div class="flex">
+                    <img class="w-8 h-8 mr-2" src="assets\logo.png" alt="">
+                    <h1 class="text-2xl font-bold">Yathra</h1>
+                </div>
+                <div class="flex justify-between xl:block hidden">
+                    <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#"><span>Home</span></a>
+                    <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#about"><span>About</span></a>
+                    <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#events"><span>Events</span></a>
+                    <a  class="ml-2 p-2 text-sm italic hover:underline underline-offset-8" href="#contact"><span>Contact</span></a>
+                    <a  class="ml-2 p-2 text-sm italic rounded-lg bg-green-600 font-bold text-white" href="#register"><span>Register</span></a>
+                </div>
+                <div class="flex justify-between xl:hidden block">
+                    <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="" type="button"><svg viewBox="0 0 100 80" width="24" height="24"><rect width="100" height="20"></rect><rect y="30" width="100" height="20"></rect><rect y="60" width="100" height="20"></rect></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-green-600">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="#events" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Events</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#register" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-yellow-600 dark:hover:text-white">Register</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <!-- <a  class="ml-2 p-2 lg:md:text-sm text-xs italic rounded-lg bg-green-600 font-bold text-white" href=""><span>Register</span></a> -->
+                </div>
             </div>
+            <img class="mt-2" src="assets\header.jpg" alt="">
+            <div class="absolute mt-10 inset-0 bg-black/50"></div>
+            <img class="absolute top-10 left-0" src="assets\yathira.png" alt="">
         </div>
 
         <!-- About Section -->
-        <div id="about" class="about text-center mt-4 mb-4 pt-4">
+        <div id="about" class="about text-center mt-4 mb-4 pt-4 container mx-auto lg:px-24 px-4">
             <h1 class="text-4xl mb-4 font-black text-green-600 italic">About</h1>
             <p class="italic lg:text-xl text-sm mb-4 leading-tight text-justify">The<span class="font-bold"> Institute of Management in Kerala</span> was established under the tutelage of the University of Kerala in the year 1991. The institute is part of the School of Business Management and Legal studies, University of Kerala. The vision of the institute is to create a generation of powerful, value driven individuals who could take humanity to the most glorious of civilizations. The institute aims through its curriculum and pedagogy to create a manager comprising of positive values such as responsibility, creativity and integrity. IMK offers MBA (General), MBA (Travel and Tourism), and MBA regular (Evening) through CSS mode. IMK also offers PhD and PDF in Management studies. IMK has illustrious alumni and has extended their Evening programme to HLL Management Academy and ACSTI</p>
             <p class="italic lg:text-xl text-sm mb-4 leading-tight text-justify"><span class="font-bold">YATHRA</span> is an inter-collegiate Tourism Management fest organized by MBA Tourism Students of the Institute of Management in Kerala (IMK), University of Kerala, Kariyavattom campus. The slogan of Yathra is "Wings to explore".The main aim of the Yathra fest is to enhance the students' skills and mould the budding managers. The event provides a platform for students to showcase one's unique talents and are essential in the holistic development of the students' personality. The fest consists of cultural and academic level programs in which postgraduate and undergraduate students could participate.</p>
@@ -80,42 +81,42 @@
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\1-min.jpg" class="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-8 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible lg:bg-black lg:px-2 lg:rounded-lg lg:py-1.5">A tourism awareness ride in the KSRTC heritage double-decker bus flagged off by Honorable Tourism Minister Shri PA Muhammad Riyas</span>
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\2-min.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible lg:bg-black lg:px-2 lg:rounded-lg lg:py-1.5">Official logo launch of yathra 2022 done by hon. Education Minister V Shivankutty</span>
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\3-min.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible lg:bg-black lg:px-2 lg:rounded-lg lg:py-1.5">Village adoption program conducted at Edava in Varkala</span>
                         </div>
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\4-min.jpg" class="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible lg:bg-black lg:px-2 lg:rounded-lg lg:py-1.5">Destination cleaning programme at Varakala Cliff</span>
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\5-min.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible lg:bg-black lg:px-2 lg:rounded-lg lg:py-1.5">The brochure of the fest was released by the renowned traveller and entrepreneur Shri Santhosh George Kulangara</span>
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\6-min.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible"></span>
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\7-min.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible"></span>
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="assets\8-min.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible">consectetur adipiscing elit. Donec id libero a urna dignissim auctor</span>
+                            <span class="absolute bottom-12 left-1/2 sm:text-sm font-semibold text-white -translate-x-1/2 -translate-y-1/2 leading-tight invisible lg:visible"></span>
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -150,13 +151,64 @@
         </div>
 
         <!-- Timeline Section -->
-        <div id="events" class="timeline mt-32 mb-24 pt-12">
+        <div id="events" class="timeline mt-32 mb-24 pt-12 container mx-auto lg:px-24 px-4">
             <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center">Schedule</h1>
 
-            <!-- Day Item -->
+            <div class="grid lg:grid-cols-3 gap-4 mt-6">
+                <div class="h-full bg-gradient-to-r from-black to-blue-600 rounded-lg p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Event 1</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend placerat magna. Praesent id accumsan mauris, vitae vulputate ligula. Duis maximus ut tortor sed gravida. Sed turpis massa, aliquet sed gravida quis, volutpat at nulla.</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 100/-</span>
+                </div>
+                <div class="h-full bg-gradient-to-r from-black to-gray-600 rounded-lg p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Event 2</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend placerat magna. Praesent id accumsan mauris, vitae vulputate ligula. Duis maximus ut tortor sed gravida. Sed turpis massa, aliquet sed gravida quis, volutpat at nulla.</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 200/-</span>
+                </div>
+                <div class="h-full bg-gradient-to-r from-black to-green-600 rounded-lg p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Event 3</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend placerat magna. Praesent id accumsan mauris, vitae vulputate ligula. Duis maximus ut tortor sed gravida. Sed turpis massa, aliquet sed gravida quis, volutpat at nulla.</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 1050/-</span>
+                </div>
+                <div class="h-full bg-gradient-to-r from-black to-pink-600 rounded-lg p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Event 4</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend placerat magna. Praesent id accumsan mauris, vitae vulputate ligula. Duis maximus ut tortor sed gravida. Sed turpis massa, aliquet sed gravida quis, volutpat at nulla.</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 500/-</span>
+                </div>
+                <div class="h-full bg-gradient-to-r from-black to-red-600 rounded-lg p-6 text-center flex flex-col justify-between">
+                    <span class="text-white text-xl italic font-bold mb-6">Event 5</span>
+                    <div class="leading-tight mb-12">
+                        <span class="text-white italic text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend placerat magna. Praesent id accumsan mauris, vitae vulputate ligula. Duis maximus ut tortor sed gravida. Sed turpis massa, aliquet sed gravida quis, volutpat at nulla.</span><br>
+                    </div>
+                    <div class="mb-4">
+                        <span class="py-2 px-4 rounded-lg text-xl italic font-bold text-white bg-yellow-600  hover:bg-yellow-700">Register</span>
+                    </div>
+                    <span class="text-white font-bold text-2xl italic">Rs. 250/-</span>
+                </div>
+            </div>
+            <!--
             <div class="day-item mt-12 mb-4">
                 <p class="font-bold text-2xl italic text-green-500 mb-4">27 April</p>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -171,7 +223,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -184,7 +235,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -196,7 +246,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -213,10 +262,8 @@
                 </div>
             </div>
 
-            <!-- Day Item -->
             <div class="day-item mt-12 mb-4">
                 <p class="font-bold text-2xl italic text-green-500 mb-4">28 April</p>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -231,7 +278,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -244,7 +290,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -256,7 +301,6 @@
                     </div>
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
-                <!-- Time item -->
                 <div class="time-item flex relative">
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <div>
@@ -272,10 +316,11 @@
                     <div class="absolute h-full w-0.5 left-1 top-3 bg-green-500 rounded-full"></div>
                 </div>
             </div>
+            -->
         </div>
 
-        <!-- Pricing Section -->
-        <div id="register" class="tickets-pricing pt-12">
+        <!-- Pricing Section 
+        <div id="register" class="tickets-pricing pt-12 container mx-auto lg:px-24 px-4">
             <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center mb-12">Buy Tickets</h1>
             <div class="pricing-item md:flex justify-center md:px-64 px-12">
                 <div class="h-full bg-gray-800 rounded-lg mx-4 my-4 p-6 text-center flex flex-col justify-between">
@@ -316,9 +361,10 @@
                 </div>
             </div>
         </div>
+        -->
 
         <!-- Contact Section -->
-        <div id="contact" class="pt-12 text-center mt-32 mb-24">
+        <div id="contact" class="pt-12 text-center mt-32 mb-24 container mx-auto lg:px-24 px-4">
             <h1 class="text-4xl mb-4 font-black text-green-600 italic text-center mb-12">Contact</h1>
             <p class="italic">Connect to us through our social media handles or through our WhatsApp number. You can also write to us at <span class="font-bold">Yathra2k22@gmail.com</span></p>
             <div class="md:flex justify-center mt-4">
@@ -331,7 +377,7 @@
         </div>
 
         <!-- Footer Section -->
-        <div class="footer mt-24 pt-12 pb-12 text-center">
+        <div class="footer mt-24 pt-12 pb-12 text-center container mx-auto lg:px-24 px-4">
             <p class="text-sm italic leading-tight">Copyright @ Tourism event. All rights reserved. Website developed and designed by <a href="https://github.com/hxri" class="text-blue-400 font-bold">hxri.prxsxd</a></p>
         </div>
     </div>
